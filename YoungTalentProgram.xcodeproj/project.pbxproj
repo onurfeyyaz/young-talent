@@ -49,6 +49,8 @@
 		DB4A884129903D5600D118B1 /* YoungTalentProgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTalentProgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4A884529903D5600D118B1 /* YoungTalentProgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungTalentProgramUITests.swift; sourceTree = "<group>"; };
 		DB4A884729903D5600D118B1 /* YoungTalentProgramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungTalentProgramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB4A885529903E1D00D118B1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		DB4A885629903E2B00D118B1 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		DB4A881829903D5500D118B1 = {
 			isa = PBXGroup;
 			children = (
+				DB4A885429903E0E00D118B1 /* Configurations */,
 				DB4A882329903D5500D118B1 /* YoungTalentProgram */,
 				DB4A883A29903D5600D118B1 /* YoungTalentProgramTests */,
 				DB4A884429903D5600D118B1 /* YoungTalentProgramUITests */,
@@ -125,6 +128,15 @@
 				DB4A884729903D5600D118B1 /* YoungTalentProgramUITestsLaunchTests.swift */,
 			);
 			path = YoungTalentProgramUITests;
+			sourceTree = "<group>";
+		};
+		DB4A885429903E0E00D118B1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A885529903E1D00D118B1 /* Development.xcconfig */,
+				DB4A885629903E2B00D118B1 /* Production.xcconfig */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
