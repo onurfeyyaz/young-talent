@@ -68,11 +68,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgShape" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-DP-WL8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgShape" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-DP-WL8">
                                 <rect key="frame" x="-46" y="348" width="485" height="470"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-1S-oXa">
-                                <rect key="frame" x="30" y="263" width="333" height="110.66666666666669"/>
+                                <rect key="frame" x="30" y="222.99999999999997" width="333" height="110.66666666666666"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37P-ef-StO">
                                         <rect key="frame" x="0.0" y="0.0" width="293.33333333333331" height="68.333333333333329"/>
@@ -91,7 +91,7 @@ your phone number</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="M8d-cu-C7Z">
-                                <rect key="frame" x="30" y="443.66666666666669" width="333" height="71.666666666666686"/>
+                                <rect key="frame" x="30" y="403.66666666666669" width="333" height="71.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFG-u5-pbE">
                                         <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="14.666666666666666"/>
@@ -117,7 +117,7 @@ your phone number</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4y-py-USh">
-                                <rect key="frame" x="30" y="535.33333333333337" width="333" height="24.666666666666629"/>
+                                <rect key="frame" x="30" y="495.33333333333331" width="333" height="24.666666666666686"/>
                                 <string key="text">By click continue you are agree with
 our Terms and Condition</string>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
@@ -132,6 +132,9 @@ our Terms and Condition</string>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="buttonImage"/>
+                                <connections>
+                                    <segue destination="e5u-aP-hut" kind="show" id="WKm-Fo-mLV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TML-VO-wyd"/>
@@ -147,7 +150,7 @@ our Terms and Condition</string>
                             <constraint firstItem="M8d-cu-C7Z" firstAttribute="leading" secondItem="TML-VO-wyd" secondAttribute="leading" constant="30" id="as3-ID-sdU"/>
                             <constraint firstItem="H4y-py-USh" firstAttribute="leading" secondItem="TML-VO-wyd" secondAttribute="leading" constant="30" id="bb3-UN-nFd"/>
                             <constraint firstItem="7p5-DP-WL8" firstAttribute="leading" secondItem="TML-VO-wyd" secondAttribute="leading" constant="-46" id="fLo-D0-72a"/>
-                            <constraint firstItem="fXM-1S-oXa" firstAttribute="top" secondItem="TML-VO-wyd" secondAttribute="top" constant="160" id="ihZ-iI-WOu"/>
+                            <constraint firstItem="fXM-1S-oXa" firstAttribute="top" secondItem="TML-VO-wyd" secondAttribute="top" constant="120" id="ihZ-iI-WOu"/>
                             <constraint firstItem="TML-VO-wyd" firstAttribute="bottom" secondItem="8uC-AJ-1bu" secondAttribute="bottom" constant="30" id="jGp-Ml-J1y"/>
                             <constraint firstItem="fXM-1S-oXa" firstAttribute="leading" secondItem="TML-VO-wyd" secondAttribute="leading" constant="30" id="vxY-CQ-Q5L"/>
                             <constraint firstItem="TML-VO-wyd" firstAttribute="trailing" secondItem="H4y-py-USh" secondAttribute="trailing" constant="30" id="xeM-bK-jq2"/>
@@ -158,6 +161,119 @@ our Terms and Condition</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFz-FG-qdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1748.854961832061" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6w4-L9-Ttl">
+            <objects>
+                <viewController id="e5u-aP-hut" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tig-vP-f9n">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgShape" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-8u-qYj">
+                                <rect key="frame" x="-46" y="348" width="485" height="470"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OTPImage" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-6O-9pl">
+                                <rect key="frame" x="33" y="112.99999999999999" width="327" height="233.66666666666663"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="DJV-c8-BWw">
+                                <rect key="frame" x="30" y="376.66666666666669" width="333" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXs-Ct-SLZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
+                                        <color key="textColor" name="Blue - Dark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EW-FS-TDT">
+                                        <rect key="frame" x="0.0" y="47.333333333333314" width="333" height="29.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" name="Blue - Light"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="lRP-tC-kyw">
+                                <rect key="frame" x="30" y="493.33333333333331" width="333" height="71.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gak-3R-9h3">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="14.666666666666666"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" name="Blue - Dark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y6d-eX-X0a">
+                                        <rect key="frame" x="0.0" y="21.666666666666686" width="333" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-Jk-ppn">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="50"/>
+                                                <color key="backgroundColor" name="Purple - Soft"/>
+                                                <color key="textColor" name="Blue - Dark"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-9c-w5J">
+                                                <rect key="frame" x="84.666666666666686" y="0.0" width="79.333333333333314" height="50"/>
+                                                <color key="backgroundColor" name="Purple - Soft"/>
+                                                <color key="textColor" name="Blue - Dark"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJ6-75-a6M">
+                                                <rect key="frame" x="169" y="0.0" width="79.666666666666686" height="50"/>
+                                                <color key="backgroundColor" name="Purple - Soft"/>
+                                                <color key="textColor" name="Blue - Dark"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esf-hP-nka">
+                                                <rect key="frame" x="253.66666666666671" y="0.0" width="79.333333333333343" height="50"/>
+                                                <color key="backgroundColor" name="Purple - Soft"/>
+                                                <color key="textColor" name="Blue - Dark"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1wz-vt-t0t"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEj-L6-Udl">
+                                <rect key="frame" x="303" y="728" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="T9B-pT-kyv"/>
+                                    <constraint firstAttribute="width" constant="60" id="zU3-yI-GKV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonImage"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bjc-uv-fx9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tg9-8u-qYj" secondAttribute="trailing" constant="-46" id="0HU-60-tFZ"/>
+                            <constraint firstItem="kJt-6O-9pl" firstAttribute="leading" secondItem="bjc-uv-fx9" secondAttribute="leading" constant="33" id="0N1-KH-kqy"/>
+                            <constraint firstItem="DJV-c8-BWw" firstAttribute="top" secondItem="kJt-6O-9pl" secondAttribute="bottom" constant="30" id="23x-Es-3q8"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="trailing" secondItem="dEj-L6-Udl" secondAttribute="trailing" constant="30" id="B9N-Ls-ecm"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="bottom" secondItem="dEj-L6-Udl" secondAttribute="bottom" constant="30" id="HGd-nf-wyy"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="trailing" secondItem="kJt-6O-9pl" secondAttribute="trailing" constant="33" id="XTM-Mi-1nU"/>
+                            <constraint firstItem="lRP-tC-kyw" firstAttribute="leading" secondItem="bjc-uv-fx9" secondAttribute="leading" constant="30" id="axl-so-fog"/>
+                            <constraint firstItem="DJV-c8-BWw" firstAttribute="leading" secondItem="bjc-uv-fx9" secondAttribute="leading" constant="30" id="b3A-el-1gn"/>
+                            <constraint firstItem="lRP-tC-kyw" firstAttribute="top" secondItem="DJV-c8-BWw" secondAttribute="bottom" constant="40" id="iE5-qn-a8C"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="bottom" secondItem="tg9-8u-qYj" secondAttribute="bottom" id="jGP-9c-a1c"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="trailing" secondItem="lRP-tC-kyw" secondAttribute="trailing" constant="30" id="jWo-zQ-dtR"/>
+                            <constraint firstItem="kJt-6O-9pl" firstAttribute="top" secondItem="bjc-uv-fx9" secondAttribute="top" constant="10" id="oy3-A0-3ho"/>
+                            <constraint firstItem="tg9-8u-qYj" firstAttribute="leading" secondItem="Tig-vP-f9n" secondAttribute="leading" constant="-46" id="tFV-xA-uhg"/>
+                            <constraint firstItem="bjc-uv-fx9" firstAttribute="trailing" secondItem="DJV-c8-BWw" secondAttribute="trailing" constant="30" id="wON-Lw-o4C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UTf-Z0-sYV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdC-vv-4jH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2571.7557251908397" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iOu-6q-r6K">
@@ -179,6 +295,7 @@ our Terms and Condition</string>
         </scene>
     </scenes>
     <resources>
+        <image name="OTPImage" width="310" height="233.66667175292969"/>
         <image name="bgShape" width="375" height="470"/>
         <image name="buttonImage" width="120" height="107"/>
         <namedColor name="Blue - Dark">
