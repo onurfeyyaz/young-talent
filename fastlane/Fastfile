@@ -1,0 +1,29 @@
+PROJECT_NAME = "YoungTalentProgram"
+PROJECT_BUNDLE = "com.feyyazonur.YoungTalentProgramProd"
+DEVELOPMENT_PROJECT_BUNDLE = "com.feyyazonur.YoungTalentProgramDev"
+PROJECT_SCHEME = "YoungTalentProgram"
+
+# development build
+lane :build_test do |values|
+    build("DevelopmentRelease", 'enterprise', "#{DEVELOPMENT_PROJECT_BUNDLE}", "match InHouse #{DEVELOPMENT_PROJECT_BUNDLE}")
+end
+
+# production build
+lane :build_production do |values|
+    build("ProductionRelease", 'enterprise', "#{PROJECT_BUNDLE}", "match InHouse #{PROJECT_BUNDLE}")
+end
+
+def build(configuration, export_method, project_bundle, certificateName)
+    gym(sheme:"#{PROJECT_NAME}",
+    configuration: configuration,
+    export_method: export_method,
+    clean = true,
+    export_options: {
+        export_method: export_method,
+        export_xcargs: "-allowProvisioningUpdate",
+        provisioningProfiles: {
+            project_bundle => certificateName,
+        }
+    }
+)
+end
