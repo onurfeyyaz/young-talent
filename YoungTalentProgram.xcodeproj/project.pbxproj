@@ -16,6 +16,9 @@
 		DB4A883C29903D5600D118B1 /* YoungTalentProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A883B29903D5600D118B1 /* YoungTalentProgramTests.swift */; };
 		DB4A884629903D5600D118B1 /* YoungTalentProgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A884529903D5600D118B1 /* YoungTalentProgramUITests.swift */; };
 		DB4A884829903D5600D118B1 /* YoungTalentProgramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A884729903D5600D118B1 /* YoungTalentProgramUITestsLaunchTests.swift */; };
+		DB4DA0D129B132AE00A9C756 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */; };
+		DB4DA0D329B132BB00A9C756 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */; };
+		DB4DA0D529B1331D00A9C756 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D429B1331D00A9C756 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		DB4A884729903D5600D118B1 /* YoungTalentProgramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungTalentProgramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB4A885529903E1D00D118B1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		DB4A885629903E2B00D118B1 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		DB4DA0D429B1331D00A9C756 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		DB4A881829903D5500D118B1 = {
 			isa = PBXGroup;
 			children = (
+				DB4DA0D429B1331D00A9C756 /* Colors.xcassets */,
 				DB4A885429903E0E00D118B1 /* Configurations */,
 				DB4A882329903D5500D118B1 /* YoungTalentProgram */,
 				DB4A883A29903D5600D118B1 /* YoungTalentProgramTests */,
@@ -102,6 +109,8 @@
 		DB4A882329903D5500D118B1 /* YoungTalentProgram */ = {
 			isa = PBXGroup;
 			children = (
+				DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */,
+				DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */,
 				DB4A882429903D5600D118B1 /* AppDelegate.swift */,
 				DB4A882629903D5600D118B1 /* SceneDelegate.swift */,
 				DB4A882829903D5600D118B1 /* ViewController.swift */,
@@ -243,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4DA0D129B132AE00A9C756 /* Montserrat-Bold.ttf in Resources */,
 				DB4A883129903D5600D118B1 /* LaunchScreen.storyboard in Resources */,
 				DB4A882E29903D5600D118B1 /* Assets.xcassets in Resources */,
+				DB4DA0D529B1331D00A9C756 /* Colors.xcassets in Resources */,
+				DB4DA0D329B132BB00A9C756 /* Montserrat-Regular.ttf in Resources */,
 				DB4A882C29903D5600D118B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
