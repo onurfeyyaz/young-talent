@@ -19,6 +19,8 @@
 		DB4DA0D129B132AE00A9C756 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */; };
 		DB4DA0D329B132BB00A9C756 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */; };
 		DB4DA0D529B1331D00A9C756 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D429B1331D00A9C756 /* Colors.xcassets */; };
+		DB4DA0D729B1352D00A9C756 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */; };
+		DB4DA0D929B13A0100A9C756 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D829B13A0100A9C756 /* Image.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		DB4DA0D429B1331D00A9C756 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DB4DA0D829B13A0100A9C756 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		DB4A881829903D5500D118B1 = {
 			isa = PBXGroup;
 			children = (
+				DB4DA0D829B13A0100A9C756 /* Image.xcassets */,
 				DB4DA0D429B1331D00A9C756 /* Colors.xcassets */,
 				DB4A885429903E0E00D118B1 /* Configurations */,
 				DB4A882329903D5500D118B1 /* YoungTalentProgram */,
@@ -118,6 +123,7 @@
 				DB4A882D29903D5600D118B1 /* Assets.xcassets */,
 				DB4A882F29903D5600D118B1 /* LaunchScreen.storyboard */,
 				DB4A883229903D5600D118B1 /* Info.plist */,
+				DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */,
 			);
 			path = YoungTalentProgram;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				DB4A882E29903D5600D118B1 /* Assets.xcassets in Resources */,
 				DB4DA0D529B1331D00A9C756 /* Colors.xcassets in Resources */,
 				DB4DA0D329B132BB00A9C756 /* Montserrat-Regular.ttf in Resources */,
+				DB4DA0D929B13A0100A9C756 /* Image.xcassets in Resources */,
 				DB4A882C29903D5600D118B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4DA0D729B1352D00A9C756 /* LoginViewController.swift in Sources */,
 				DB4A882929903D5600D118B1 /* ViewController.swift in Sources */,
 				DB4A882529903D5600D118B1 /* AppDelegate.swift in Sources */,
 				DB4A882729903D5600D118B1 /* SceneDelegate.swift in Sources */,
