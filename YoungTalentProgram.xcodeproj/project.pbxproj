@@ -21,6 +21,7 @@
 		DB4DA0D529B1331D00A9C756 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D429B1331D00A9C756 /* Colors.xcassets */; };
 		DB4DA0D729B1352D00A9C756 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */; };
 		DB4DA0D929B13A0100A9C756 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D829B13A0100A9C756 /* Image.xcassets */; };
+		DB5DD63C29B6654500837C30 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DD63B29B6654500837C30 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DB4DA0D429B1331D00A9C756 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB4DA0D829B13A0100A9C756 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		DB5DD63B29B6654500837C30 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				DB4A882F29903D5600D118B1 /* LaunchScreen.storyboard */,
 				DB4A883229903D5600D118B1 /* Info.plist */,
 				DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */,
+				DB5DD63B29B6654500837C30 /* RegisterViewController.swift */,
 			);
 			path = YoungTalentProgram;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4DA0D729B1352D00A9C756 /* LoginViewController.swift in Sources */,
+				DB5DD63C29B6654500837C30 /* RegisterViewController.swift in Sources */,
 				DB4A882929903D5600D118B1 /* ViewController.swift in Sources */,
 				DB4A882529903D5600D118B1 /* AppDelegate.swift in Sources */,
 				DB4A882729903D5600D118B1 /* SceneDelegate.swift in Sources */,
