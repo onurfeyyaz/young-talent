@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DB4A882029903D5500D118B1"
-               BuildableName = "YoungTalentProgram.app"
+               BuildableName = "MobvenProd.app"
                BlueprintName = "YoungTalentProgram"
                ReferencedContainer = "container:YoungTalentProgram.xcodeproj">
             </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB4A882029903D5500D118B1"
-            BuildableName = "YoungTalentProgram.app"
+            BuildableName = "MobvenProd.app"
             BlueprintName = "YoungTalentProgram"
             ReferencedContainer = "container:YoungTalentProgram.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB4A882029903D5500D118B1"
-            BuildableName = "YoungTalentProgram.app"
+            BuildableName = "MobvenProd.app"
             BlueprintName = "YoungTalentProgram"
             ReferencedContainer = "container:YoungTalentProgram.xcodeproj">
          </BuildableReference>
