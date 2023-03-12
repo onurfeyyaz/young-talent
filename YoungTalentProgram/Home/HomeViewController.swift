@@ -33,29 +33,41 @@ class HomeViewController: UIViewController {
                 return "Android Grubu"
             }
         }
-        /*
-        var item: [messageCellItem] {
+        
+        var image: String {
+           return "demoProfilePicture"
+        }
+        
+        var lastMessage: String {
             switch self {
             case .kozalak:
-                return [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "KOZALAK", date: "12:34"),
-                        messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
+                return "Last Kozalak"
             case .ios:
-                [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "IOS", date: "12:34"),
-                               messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
+                return "Last iOS"
             case .android:
-                [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "ANDROID", date: "12:34"),
-                                messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
+                return "Last Android"
             }
-        } */
+        }
+        
+        var items: [messageCellItem] {
+            switch self {
+            case .kozalak:
+                return [messageCellItem(senderImage: "jorge", senderName: "Feyyaz", message: "KOZALAK", date: "12:34"),
+                        messageCellItem(senderImage: "samantha", senderName: "Onur", message: "tamamdır", date: "10:23"),
+                        messageCellItem(senderImage: "jorge", senderName: "Feyyaz", message: "KOZALAK", date: "12:34"),
+                        messageCellItem(senderImage: "milendra", senderName: "Onur", message: "tamamdır", date: "10:23")]
+            case .ios:
+                return [messageCellItem(senderImage: "jorge", senderName: "Feyyaz", message: "IOS", date: "12:34"),
+                        messageCellItem(senderImage: "antonio", senderName: "Onur", message: "tamamdır", date: "10:23"),
+                        messageCellItem(senderImage: "samantha", senderName: "Feyyaz", message: "KOZALAK", date: "12:34"),
+                        messageCellItem(senderImage: "micheal", senderName: "Onur", message: "tamamdır", date: "10:23")]
+            case .android:
+                return [messageCellItem(senderImage: "milendra", senderName: "Feyyaz", message: "ANDROID", date: "12:34"),
+                                messageCellItem(senderImage: "samantha", senderName: "Onur", message: "tamamdır", date: "10:23")]
+            }
+        }
     }
-    
-    
-    let messagesKozalak = [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "KOZALAK", date: "12:34"),
-                    messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
-    let messagesIos = [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "IOS", date: "12:34"),
-                    messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
-    let messagesAndroid = [messageCellItem(senderImage: "demoProfilePicture", senderName: "Feyyaz", message: "ANDROID", date: "12:34"),
-                    messageCellItem(senderImage: "demoProfilePicture", senderName: "Onur", message: "tamamdır", date: "10:23")]
+
    /*
     let section = [messageSectionItem(groupImage: UIImage(named: "demoProfilePicture"), groupName: "Group Name", lastMessage: "Last Message", groupMessages: [
         messageCellItem(senderImage: UIImage(named:"demoProfilePicture"), senderName: "Feyyaz", message: "Selam", date: "12:34"),
@@ -74,6 +86,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ItemTableViewCell", bundle: .main), forCellReuseIdentifier: "ItemTableViewCell")
+        tableView.register(SectionView.self, forHeaderFooterViewReuseIdentifier: "SectionView")
     }
 }
 
@@ -81,37 +94,34 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let section = Section(rawValue: section) else { return 1 }
         
-        switch section {
-        case .kozalak:
-            return messagesKozalak.count
-        case .ios:
-            return messagesIos.count
-        case .android:
-            return messagesAndroid.count
-        }
+        return section.items.count
 
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let section = Section(rawValue: indexPath.section) else { return UITableViewCell()}
-       
-        switch section {
-        case .kozalak:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell
-            cell?.configureCell(image: messagesKozalak[indexPath.row].senderImage, name: messagesKozalak[indexPath.row].senderName, message: messagesKozalak[indexPath.row].message, date: messagesKozalak[indexPath.row].date ?? "kozalak")
-            return cell ?? UITableViewCell()
-        case .ios:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell
-            cell?.configureCell(image: messagesIos[indexPath.row].senderImage, name: messagesIos[indexPath.row].senderName, message: messagesIos[indexPath.row].message, date: messagesIos[indexPath.row].date ?? "ios")
-            return cell ?? UITableViewCell()
-        case .android:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell
-            cell?.configureCell(image: messagesAndroid[indexPath.row].senderImage, name: messagesAndroid[indexPath.row].senderName, message: messagesAndroid[indexPath.row].message, date: messagesAndroid[indexPath.row].date ?? "android")
-            return cell ?? UITableViewCell()
-        }
- 
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell
+        cell?.configureCell(image: section.items[indexPath.row].senderImage, name: section.items[indexPath.row].senderName, message: section.items[indexPath.row].message, date: section.items[indexPath.row].date ?? "bos")
+        return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let section = Section(rawValue: section) else { return UIView()}
+        
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SectionView") as? SectionView
+        header?.image.image = UIImage(named:section.image)
+        header?.name.text = section.title
+        header?.lastMessage.text = section.lastMessage
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
+    }
 }
