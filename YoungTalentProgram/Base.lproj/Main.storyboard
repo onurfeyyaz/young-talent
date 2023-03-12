@@ -126,7 +126,7 @@
                                         </constraints>
                                         <color key="textColor" name="Blue - Dark"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -166,6 +166,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GC8-s9-SY3"/>
+                    <connections>
+                        <outlet property="setupAccountNameTextField" destination="vSM-mN-QqS" id="6kk-X4-B6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xr-EU-pPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,7 +282,7 @@ our Terms and Condition</string>
         <!--View Controller-->
         <scene sceneID="6w4-L9-Ttl">
             <objects>
-                <viewController id="e5u-aP-hut" sceneMemberID="viewController">
+                <viewController id="e5u-aP-hut" customClass="OTPViewController" customModule="MobvenDev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tig-vP-f9n">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,28 +327,28 @@ our Terms and Condition</string>
                                                 <color key="backgroundColor" name="Purple - Soft"/>
                                                 <color key="textColor" name="Blue - Dark"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-9c-w5J">
                                                 <rect key="frame" x="84.666666666666686" y="0.0" width="79.333333333333314" height="50"/>
                                                 <color key="backgroundColor" name="Purple - Soft"/>
                                                 <color key="textColor" name="Blue - Dark"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJ6-75-a6M">
                                                 <rect key="frame" x="169" y="0.0" width="79.666666666666686" height="50"/>
                                                 <color key="backgroundColor" name="Purple - Soft"/>
                                                 <color key="textColor" name="Blue - Dark"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esf-hP-nka">
                                                 <rect key="frame" x="253.66666666666671" y="0.0" width="79.333333333333343" height="50"/>
                                                 <color key="backgroundColor" name="Purple - Soft"/>
                                                 <color key="textColor" name="Blue - Dark"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue" textContentType="one-time-code"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -384,6 +387,12 @@ our Terms and Condition</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UTf-Z0-sYV"/>
+                    <connections>
+                        <outlet property="otpCode1" destination="3Lr-Jk-ppn" id="Rgy-kI-UCz"/>
+                        <outlet property="otpCode2" destination="xnk-9c-w5J" id="hkt-BM-mRM"/>
+                        <outlet property="otpCode3" destination="bJ6-75-a6M" id="Cz4-HE-Eco"/>
+                        <outlet property="otpCode4" destination="esf-hP-nka" id="b09-X2-sCY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdC-vv-4jH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
