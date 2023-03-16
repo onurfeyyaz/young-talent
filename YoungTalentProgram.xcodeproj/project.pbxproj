@@ -23,6 +23,11 @@
 		DB4DA0D929B13A0100A9C756 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4DA0D829B13A0100A9C756 /* Image.xcassets */; };
 		DB5DD63C29B6654500837C30 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DD63B29B6654500837C30 /* RegisterViewController.swift */; };
 		DB77C54F29BE0EA100B85027 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C54E29BE0EA100B85027 /* OTPViewController.swift */; };
+		DB77C55129BE15C400B85027 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C55029BE15C400B85027 /* HomeViewController.swift */; };
+		DB77C55729BE1D5200B85027 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C55529BE1D5200B85027 /* ItemTableViewCell.swift */; };
+		DB77C55829BE1D5200B85027 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB77C55629BE1D5200B85027 /* ItemTableViewCell.xib */; };
+		DB77C55B29BE3F1100B85027 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C55A29BE3F1100B85027 /* SectionView.swift */; };
+		DB77C55D29BE482D00B85027 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77C55C29BE482D00B85027 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		DB4DA0D829B13A0100A9C756 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		DB5DD63B29B6654500837C30 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DB77C54E29BE0EA100B85027 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		DB77C55029BE15C400B85027 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB77C55529BE1D5200B85027 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		DB77C55629BE1D5200B85027 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		DB77C55A29BE3F1100B85027 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		DB77C55C29BE482D00B85027 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,7 @@
 		DB4A881829903D5500D118B1 = {
 			isa = PBXGroup;
 			children = (
+				DB4A882D29903D5600D118B1 /* Assets.xcassets */,
 				DB4DA0D829B13A0100A9C756 /* Image.xcassets */,
 				DB4DA0D429B1331D00A9C756 /* Colors.xcassets */,
 				DB4A885429903E0E00D118B1 /* Configurations */,
@@ -118,18 +129,16 @@
 		DB4A882329903D5500D118B1 /* YoungTalentProgram */ = {
 			isa = PBXGroup;
 			children = (
-				DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */,
-				DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */,
+				DB77C55429BE1D1B00B85027 /* Home */,
+				DB77C55329BE1D0900B85027 /* Login */,
+				DB77C55229BE1CEA00B85027 /* Font */,
 				DB4A882429903D5600D118B1 /* AppDelegate.swift */,
 				DB4A882629903D5600D118B1 /* SceneDelegate.swift */,
 				DB4A882829903D5600D118B1 /* ViewController.swift */,
 				DB4A882A29903D5600D118B1 /* Main.storyboard */,
-				DB4A882D29903D5600D118B1 /* Assets.xcassets */,
 				DB4A882F29903D5600D118B1 /* LaunchScreen.storyboard */,
 				DB4A883229903D5600D118B1 /* Info.plist */,
-				DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */,
-				DB5DD63B29B6654500837C30 /* RegisterViewController.swift */,
-				DB77C54E29BE0EA100B85027 /* OTPViewController.swift */,
+				DB77C55C29BE482D00B85027 /* UIColor+Extension.swift */,
 			);
 			path = YoungTalentProgram;
 			sourceTree = "<group>";
@@ -158,6 +167,44 @@
 				DB4A885629903E2B00D118B1 /* Production.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		DB77C55229BE1CEA00B85027 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DB4DA0D029B132AE00A9C756 /* Montserrat-Bold.ttf */,
+				DB4DA0D229B132BB00A9C756 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DB77C55329BE1D0900B85027 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DB4DA0D629B1352D00A9C756 /* LoginViewController.swift */,
+				DB77C54E29BE0EA100B85027 /* OTPViewController.swift */,
+				DB5DD63B29B6654500837C30 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DB77C55429BE1D1B00B85027 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DB77C55929BE3EE700B85027 /* Cells */,
+				DB77C55029BE15C400B85027 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DB77C55929BE3EE700B85027 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB77C55529BE1D5200B85027 /* ItemTableViewCell.swift */,
+				DB77C55629BE1D5200B85027 /* ItemTableViewCell.xib */,
+				DB77C55A29BE3F1100B85027 /* SectionView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB77C55829BE1D5200B85027 /* ItemTableViewCell.xib in Resources */,
 				DB4DA0D129B132AE00A9C756 /* Montserrat-Bold.ttf in Resources */,
 				DB4A883129903D5600D118B1 /* LaunchScreen.storyboard in Resources */,
 				DB4A882E29903D5600D118B1 /* Assets.xcassets in Resources */,
@@ -297,10 +345,14 @@
 			files = (
 				DB77C54F29BE0EA100B85027 /* OTPViewController.swift in Sources */,
 				DB4DA0D729B1352D00A9C756 /* LoginViewController.swift in Sources */,
+				DB77C55B29BE3F1100B85027 /* SectionView.swift in Sources */,
 				DB5DD63C29B6654500837C30 /* RegisterViewController.swift in Sources */,
 				DB4A882929903D5600D118B1 /* ViewController.swift in Sources */,
+				DB77C55729BE1D5200B85027 /* ItemTableViewCell.swift in Sources */,
 				DB4A882529903D5600D118B1 /* AppDelegate.swift in Sources */,
+				DB77C55129BE15C400B85027 /* HomeViewController.swift in Sources */,
 				DB4A882729903D5600D118B1 /* SceneDelegate.swift in Sources */,
+				DB77C55D29BE482D00B85027 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
