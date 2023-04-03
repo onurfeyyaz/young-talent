@@ -4,7 +4,7 @@ public protocol Endpoint {
     var scheme: String { get }
     var host: String { get }
     var path: String { get }
-    var port: String { get }
+    var port: Int { get }
     var method: RequestMethod { get }
     var header: [String: String]? { get }
     var body: [String: String]? { get }
@@ -13,14 +13,14 @@ public protocol Endpoint {
 
 extension Endpoint {
     public var scheme: String {
-        return "https"
+        return "http"
     }
     
     public var host: String {
         return "momentumv2.mobven.com"
     }
     
-    public var port: String {
-        return "7076"
+    public var port: Int {
+        return 7076
     }
 }

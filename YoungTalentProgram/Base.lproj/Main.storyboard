@@ -284,6 +284,9 @@ your phone number</string>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="buttonImage"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="R9K-Z9-We7" eventType="touchUpInside" id="U3r-9w-8xS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4y-py-USh">
                                 <rect key="frame" x="30" y="571" width="315" height="24.666666666666629"/>

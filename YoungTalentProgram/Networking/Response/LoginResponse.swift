@@ -1,10 +1,11 @@
 import Foundation
 
+
 public struct LoginResponse: Codable {
     public let error: Bool
     public let reason: String
     public let body: Body
-
+    
     public struct Body: Codable {
         public let id: String
         public let email: String
@@ -17,7 +18,7 @@ public struct LoginResponse: Codable {
         public let accessToken: String
         public let pushNotificationToken: String
     }
-
+    
     public struct Team: Codable {
         public let name: String
         public let deletedAt: String?
@@ -26,7 +27,7 @@ public struct LoginResponse: Codable {
         public let createdAt: Date
         public let updatedAt: Date
     }
- 
+    
     public struct Company: Codable {
         public let id: String
     }

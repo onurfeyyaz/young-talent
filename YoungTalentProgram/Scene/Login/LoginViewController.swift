@@ -3,13 +3,24 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var termsAndConds: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+    }
+    
+    @IBAction func loginAction(_ sender: UIButton) {
+        getData { result in
+            switch result {
+            case .success(let success):
+                print("SUCCESSS ******* \(success.body.accessToken)")
+            case .failure(let error):
+                print("ERRRORR \(error)")
+            }
+        }
     }
     
     func setupUI() {
@@ -34,5 +45,20 @@ class LoginViewController: UIViewController {
                                            length: "Terms and Condition".count))
         
         termsAndConds.attributedText = attributedLabel
+    }
+}
+
+extension LoginViewController: HTTPClient {
+    func getData(_ completion: @escaping (Result<LoginResponse, RequestError>) -> Void) {
+        sendRequest(endpoint: LoginEndpoint.withEmail, responseModel: LoginResponse.self) { result in
+            switch result {
+            case .success(let response):
+                print("RESPONSEE ******* \(response)")
+                completion(.success(response))
+            case .failure(let error):
+                print("Error first ******* \(error.localizedDescription)")
+                completion(.failure(error))
+            }
+        }
     }
 }
