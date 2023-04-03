@@ -34,6 +34,7 @@
 		DB98B15829C89BB500119ADA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98B15729C89BB500119ADA /* Endpoint.swift */; };
 		DB98B15B29C8A15F00119ADA /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98B15A29C8A15F00119ADA /* LoginEndpoint.swift */; };
 		DB98B15D29C8A5BB00119ADA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98B15C29C8A5BB00119ADA /* HTTPClient.swift */; };
+		DBB514F329DB95A500D6E3C9 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514F229DB95A500D6E3C9 /* KeychainHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		DB98B15729C89BB500119ADA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		DB98B15A29C8A15F00119ADA /* LoginEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
 		DB98B15C29C8A5BB00119ADA /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		DBB514F229DB95A500D6E3C9 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				DB4A882A29903D5600D118B1 /* Main.storyboard */,
 				DB4A882F29903D5600D118B1 /* LaunchScreen.storyboard */,
 				DB4A883229903D5600D118B1 /* Info.plist */,
+				DBB514F229DB95A500D6E3C9 /* KeychainHelper.swift */,
 			);
 			path = YoungTalentProgram;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				DB77C55129BE15C400B85027 /* HomeViewController.swift in Sources */,
 				DB4A882729903D5600D118B1 /* SceneDelegate.swift in Sources */,
 				DB77C55D29BE482D00B85027 /* UIColor+Extension.swift in Sources */,
+				DBB514F329DB95A500D6E3C9 /* KeychainHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
